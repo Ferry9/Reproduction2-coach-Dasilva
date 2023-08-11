@@ -1,0 +1,193 @@
+*{
+	font-family: 'Kreon', serif;
+	font: 1em sans-serif;ont-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+    
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	padding: 2px;
+	gap: 1%;
+
+
+}
+
+header{
+	height:20vh;
+	background:rgb(11, 127, 171);
+
+}
+
+
+
+
+
+/*Navigation*/
+
+nav{
+
+	height: 15vh;
+	background:red;
+	width: 80%;
+	
+}
+
+main>div:nth-child(2){
+  display: flex;
+  justify-content: center;
+}
+
+/*Fin navigation*/
+
+
+
+
+
+/*Grand block section*/
+
+main section:nth-child(3){
+	background: #4bcf26;
+
+}
+
+
+
+
+
+/*Dernier bloc*/
+
+main section:nth-child(4){
+	background: #cbdb3f;
+	display: grid;
+	grid-template-columns: 3fr 3fr 4fr;
+	grid-template-rows: 1.5fr 2fr 1fr;
+	gap: 1%;
+	
+}
+
+main section:nth-child(4) > :nth-child(1) {
+	grid-column: 1 ;
+	grid-row: 1 / span 3;
+	
+	
+	background: grey;
+}
+
+main section:nth-child(4) > :nth-child(2){
+    grid-column:2 / span 3;
+    grid-row:1 ;
+    background: blue;}
+   
+
+main section:nth-child(4)>:nth-child(3){
+    grid-column:2 ;
+    grid-row: 2 / span 3;
+    background: blue;
+    
+
+}
+
+
+main section:nth-child(4)>:nth-child(4){
+    grid-column:3;
+    grid-row:2 ;
+    background: grey;
+    height: 100%;
+     width: 100%;
+}
+
+main section:nth-child(4)>:nth-child(5){
+    grid-column: 3 span 3;
+    grid-row:3 / span 3;
+    background: red;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+section{
+	height: 70vh;
+	
+}
+/*Fin grand block sevtion*/
+
+
+
+
+
+/*Enfants de la section 1*/
+main section:nth-child(3) {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 30px;
+
+}
+
+main section aside:nth-child(1){
+/*	border: 1px solid black;*/
+	width: 40vw;
+	height: 55vh;
+	transition: transform 0.6s;
+
+}
+
+main section aside:nth-child(1):hover{
+
+ transform: scale(1.1);
+}
+
+
+video{
+	width: 40vw;
+	height: 55vh;
+}
+
+img{
+	width: 40vw;
+	height: 59.8vh;
+}
+
+
+main section article:nth-child(2){
+	background: grey;
+	border: 1px solid black;
+	width: 40vw;
+	height: 60vh;
+	transition: transform 0.3s;
+}
+
+
+main section article:nth-child(2):hover{
+
+ transform: scale(1.1);
+}
+/*Fin enfant de la section 1*/
+
+
+
+
+
+/*Début section 2*/
+
+
